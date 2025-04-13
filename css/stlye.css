@@ -190,41 +190,48 @@ header nav .contener .links .log_in:hover{
 }
 
 /* end tegtory */
-.slider_ads{
-    width: 100%;
-    margin-top: 50px;
+.swiper{
+    border-radius: 8px;
+    margin-top: 35px;
 }
-.slider_ads .contener .slide{
+
+
+.swiper-pagination-bullet-active{
+    background-color: var(--main-color) !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px !important;
+}
+
+.swiper  .swiper-slide{
+    width: 100% !important;
     background-color: white;
     display: flex;
-    justify-content: space-between;
-    /* border: 1px solid var(--main-color); */
+    justify-content: center;
     box-shadow: 5px 0px 20px var(--border-color);
-    border-radius: 8px;
 }
-.slider_ads .contener .slide img{
-    border-radius: 8px;
-    width: 49%;
+.swiper .swiper-slide img{
+    width: 50% ;
 }
-.slider_ads .contener .slide .text{
-    width: 49%;
+.swiper .swiper-slide .text{
+    width: 50%;
    padding-left: 50px;
    padding-top: 20px;
 }
-.slider_ads .contener .slide .text h3{
+.swiper .swiper-slide .text h3{
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 35px;
     color: var(--main-color);
 }
-.slider_ads .contener .slide .text p{
+.swiper .swiper-slide .text p{
     line-height: 1.8;
     font-size: 15px;
     padding-right: 150px;
     margin-bottom: 35px;
     color: rgb(71, 69, 69);
 }
-.slider_ads .contener .slide .text button{
+.swiper  .swiper-slide .text button{
     padding: 9px 25px;
     background-color: var(--main-color);
     color: white;
