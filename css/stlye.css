@@ -50,13 +50,13 @@ a{
     position: absolute;
     right: 0;
     top: 0;
-    height: 34px;
+    height: 35px;
     width: 40px;
     text-align: center;
     line-height: 34px;
     border-radius: 0px 50px 50px 0px;
     font-size: 19px;
-    border: 1px solid var(--main-color);
+    border: 1px solid transparent;
     background-color: var(--main-color);
     color:white;
     cursor: pointer;
@@ -65,10 +65,11 @@ a{
 .top_nav .serch button:hover{
     color: var(--main-color);
     background-color: white;
+    border: 1px solid var(--main-color);
+    border-left: transparent;
 }
 
 .top_nav .serch  input{
-
     border: 1px solid var(--main-color) ;
     outline: none;
     padding: 5px 10px;
@@ -266,6 +267,11 @@ header nav .contener .links .log_in:hover{
     padding: 20px 0;
     margin-bottom: 24px;
     font-size: 30px;
+    text-transform: capitalize;
+}
+.top_slider h2 span{
+    font-weight: normal;
+    font-size: 25px;
 }
 .top_slider h2::before{
     content: "";
@@ -284,6 +290,18 @@ header nav .contener .links .log_in:hover{
     border-radius: var(--border-radius);
     box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.1);
     margin-bottom: 20px;
+    position: relative;
+}
+.sale{
+    position: absolute;
+    padding: 3px 10px;
+    background-color: rgba(255, 0, 0, 0.779);
+    font-weight: 400;
+    color: white;
+    border-radius: 10px;
+    right: 15px;
+    z-index: 5;
+
 }
 .product_slider .product .img_product{
     overflow: hidden;
@@ -292,7 +310,8 @@ header nav .contener .links .log_in:hover{
 }
 .product_slider .product img{
     width: 100%;
-    transition: 0.8s ease;
+    height: 100%;
+    transition: 0.5s ease;
 }
 .product_slider .product:hover img{
     transform: scale(1.2);
@@ -344,16 +363,32 @@ header nav .contener .links .log_in:hover{
     background-color: white;
     color: var(--main-color);
 }
-
+.pris{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
 .pris p{
     color: black;
     font-weight: 500;
 }
-
 .pris p span{
     color: rgb(50, 49, 49);
     font-weight: 400;
 }
+
+.sale_product .pris p:last-child{
+    color:rgba(40, 40, 40, 0.492);
+    font-weight: 400;
+    text-decoration: line-through;
+}
+.sale_product .pris p:last-child span{
+    color: rgba(40, 40, 40, 0.492);
+
+    font-weight: 400;
+}
+
+
 
 .mySwiper .btn_Swip{
     position: absolute;
