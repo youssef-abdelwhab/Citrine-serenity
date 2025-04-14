@@ -1,13 +1,7 @@
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-
     autoplay:{
         delay:2000,
-    },
-
-
-  
+    }, 
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
@@ -17,10 +11,34 @@ const swiper = new Swiper('.swiper', {
     },
     loop: true,
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
   });
-  
+
+  var swiper2 = new Swiper(".product_swaper", {
+    slidesPerView: 4,
+    spaceBetween:30,
+    // autoplay:{
+    //    delay:4000,
+    // },
+    navigation:{
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev"
+    },
+    loop:true,
+    breakpoints:{
+      1600:{
+        slidesPerView: 5,
+      },
+      1200:{
+        slidesPerView: 4,
+        spaceBetween:25,
+      },
+      700:{
+        slidesPerView: 3,
+        spaceBetween:15,
+      },
+      0:{
+        slidesPerView: 2,
+        spaceBetween:10,
+      },
+    }
+  });
