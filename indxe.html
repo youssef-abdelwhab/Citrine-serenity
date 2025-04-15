@@ -24,7 +24,7 @@
                 </form>
     
                 <div class="cart_hart ">
-                    <div class="cart">
+                    <div class="cart" onclick="open_cart()" >
                         <i class="fa-solid fa-cart-shopping"></i>
                     </div>
                     <div class="hart ">
@@ -53,6 +53,90 @@
             </div>
         </nav>
     </header>
+    <section class="slid_cart" id="cart">
+        <div class="top_cart">
+            <h3>my cart <span>(0 Item in Cart)</span></h3>
+            <span onclick="close_cart()" class="bg-overlay"></span>
+            <span onclick="close_cart()" ><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div class="items_in_cart">
+            <div class="product_cart">
+                <img src="./imgs/IMG_1794.JPG"alt="">
+                <div class="information">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>quantity : <span>4</span></p>
+                    <p>prix : <span>2000<span>dz</span></span></p>
+                </div>
+                <button><i class="fa-solid fa-trash-can"></i></button> 
+            </div>
+            <div class="product_cart">
+                <img src="./imgs/IMG_1794.JPG"alt="">
+                <div class="information">
+                    <h3><a href="">Lorem ipsum dolor sit amet</a></h3>
+                    <p>quantity : <span>4</span></p>
+                    <p>prix : <span>2000<span>dz</span></span></p>
+                </div>
+                <button><i class="fa-solid fa-trash-can"></i></button> 
+            </div>
+            <div class="product_cart">
+                <img src="./imgs/IMG_1794.JPG"alt="">
+                <div class="information">
+                    <h3><a href="">Lorem ipsum dolor sit amet</a></h3>
+                    <p>quantity : <span>4</span></p>
+                    <p>prix : <span>2000<span>dz</span></span></p>
+                </div>
+                <button><i class="fa-solid fa-trash-can"></i></button> 
+            </div>
+            <div class="product_cart">
+                <img src="./imgs/IMG_1794.JPG"alt="">
+                <div class="information">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>quantity : <span>4</span></p>
+                    <p>prix : <span>2000<span>dz</span></span></p>
+                </div>
+                <button><i class="fa-solid fa-trash-can"></i></button> 
+            </div>
+            <div class="product_cart">
+                <img src="./imgs/IMG_1794.JPG"alt="">
+                <div class="information">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>quantity : <span>4</span></p>
+                    <p>prix : <span>2000<span>dz</span></span></p>
+                </div>
+                <button><i class="fa-solid fa-trash-can"></i></button> 
+            </div>
+            <div class="product_cart">
+                <img src="./imgs/IMG_1794.JPG"alt="">
+                <div class="information">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>quantity : <span>4</span></p>
+                    <p>prix : <span>2000<span>dz</span></span></p>
+                </div>
+                <button><i class="fa-solid fa-trash-can"></i></button> 
+            </div>
+            <div class="product_cart">
+                <img src="./imgs/IMG_1794.JPG"alt="">
+                <div class="information">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>quantity : <span>4</span></p>
+                    <p>prix : <span>2000<span>dz</span></span></p>
+                </div>
+                <button><i class="fa-solid fa-trash-can"></i></button> 
+            </div>
+        </div>
+        <div class="footer_cart">
+            <div class="Cart_subtotal">
+                <h4>Cart subtotal</h4>
+                <p><span>0 dz</span></p>
+            </div>
+            <div class="btm">
+                <a href="#" class="btm_cart">Proceed  to  checkout</a>
+                <a href="#" class="trans_bg">view cart</a>
+            </div>
+
+        </div>
+
+    </section>
     <!-- Slider main container -->
     <div class="swiper contener">
             <!-- Additional required wrapper -->
@@ -116,8 +200,14 @@
                 <h4>woman</h4>
             </div>
         </div>
-    </section>
+    </section> 
 
+
+
+    <section class="servis">
+
+
+    </section>
     <section class="product_slider sale_product ">
         <div class="contener">
             <div class="top_slider">
@@ -385,181 +475,350 @@
                 <div class="swiper-button-prev btn_Swip"></div>
 
                 <div class="products swiper-wrapper">
-                        <div class="product swiper-slide">
-                            <div class="img_product">
-                                <img src="./imgs/IMG_1794.JPG" alt="">
-                            </div>
-                            <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-    
-    
-                            <div class="pris">
-                                <p>2600 <span>dz</span></p>
-                            </div>
-                            <div class="footer_cart">
-                                <button>Buy</button>
-                                <div class="hart ">
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                                <div class="cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                            </div>
+                    <div class="product swiper-slide">
+                        <div class="img_product">
+                            <img src="./imgs/IMG_1794.JPG" alt="">
                         </div>
-                        <div class="product swiper-slide">
-                            <div class="img_product">
-                                <img src="./imgs/IMG_1794.JPG" alt="">
-                            </div>
-                            <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-    
-    
-                            <div class="pris">
-                                <p>2600 <span>dz</span></p>
-                            </div>
-                            <div class="footer_cart">
-                                <button>Buy</button>
-                                <div class="hart ">
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                                <div class="cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                             </div>
-
-
-                        </div>
-                        <div class="product swiper-slide">
-                            <div class="img_product">
-                                <img src="./imgs/IMG_1794.JPG" alt="">
-                            </div>
-                            <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-    
-    
-                            <div class="pris">
-                                <p>2600 <span>dz</span></p>
-                            </div>
-                            <div class="footer_cart">
-                                <button>Buy</button>
-                                <div class="hart ">
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                                <div class="cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                             </div>
-                        </div>
-                        <div class="product swiper-slide">
-                            <div class="img_product">
-                                <img src="./imgs/IMG_1794.JPG" alt="">
-                            </div>
-                            <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-    
-    
-                            <div class="pris">
-                                <p>2600 <span>dz</span></p>
-                            </div>
-                            <div class="footer_cart">
-                                <button>Buy</button>
-                                <div class="hart ">
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                                <div class="cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                             </div>
-                        </div>
-                        <div class="product swiper-slide">
-                            <div class="img_product">
-                                <img src="./imgs/IMG_1794.JPG" alt="">
-                            </div>
-                            <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-    
-    
-                            <div class="pris">
-                                <p>2600 <span>dz</span></p>
-                            </div>
-                            <div class="footer_cart">
-                                <button>Buy</button>
-                                <div class="hart ">
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                                <div class="cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                             </div>
-                        </div>
-                        <div class="product swiper-slide">
-                            <div class="img_product">
-                                <img src="./imgs/IMG_1794.JPG" alt="">
-                            </div>
-                            <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-    
-    
-                            <div class="pris">
-                                <p>2600 <span>dz</span></p>
-                            </div>
-                            <div class="footer_cart">
-                                <button>Buy</button>
-                                <div class="hart ">
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                                <div class="cart">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                             </div>
+                        <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
 
+                        <div class="pris">
+                            <p>2600 <span>dz</span></p>
+                        </div>
+                        <div class="footer_cart">
+                            <button>Buy</button>
+                            <div class="hart ">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="img_product">
+                            <img src="./imgs/IMG_1794.JPG" alt="">
+                        </div>
+                        <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+
+                        <div class="pris">
+                            <p>2600 <span>dz</span></p>
+                        </div>
+                        <div class="footer_cart">
+                            <button>Buy</button>
+                            <div class="hart ">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                         </div>
+
+
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="img_product">
+                            <img src="./imgs/IMG_1794.JPG" alt="">
+                        </div>
+                        <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+
+                        <div class="pris">
+                            <p>2600 <span>dz</span></p>
+                        </div>
+                        <div class="footer_cart">
+                            <button>Buy</button>
+                            <div class="hart ">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="img_product">
+                            <img src="./imgs/IMG_1794.JPG" alt="">
+                        </div>
+                        <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+
+                        <div class="pris">
+                            <p>2600 <span>dz</span></p>
+                        </div>
+                        <div class="footer_cart">
+                            <button>Buy</button>
+                            <div class="hart ">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="img_product">
+                            <img src="./imgs/IMG_1794.JPG" alt="">
+                        </div>
+                        <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+
+                        <div class="pris">
+                            <p>2600 <span>dz</span></p>
+                        </div>
+                        <div class="footer_cart">
+                            <button>Buy</button>
+                            <div class="hart ">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="img_product">
+                            <img src="./imgs/IMG_1794.JPG" alt="">
+                        </div>
+                        <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="pris">
+                            <p>2600 <span>dz</span></p>
+                        </div>
+                        <div class="footer_cart">
+                            <button>Buy</button>
+                            <div class="hart ">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                         </div>
+                    </div>
                 </div>
-
             </div>
-
-            
         </div>
     </section>
+    <section class="product_slider ">
+        <div class="contener">
+            <div class="top_slider">
+                <h2>Perfumes</h2>
+            </div>
+
+            <div class="product_swaper  mySwiper">
+
+                <div class="swiper-button-next btn_Swip"></div>
+                <div class="swiper-button-prev btn_Swip"></div>
+
+                <div class="products swiper-wrapper">
+                    <div class="product swiper-slide">
+                        <div class="img_product">
+                            <img src="./imgs/IMG_1794.JPG" alt="">
+                        </div>
+                        <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+
+                        <div class="pris">
+                            <p>2600 <span>dz</span></p>
+                        </div>
+                        <div class="footer_cart">
+                            <button>Buy</button>
+                            <div class="hart ">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="img_product">
+                            <img src="./imgs/IMG_1794.JPG" alt="">
+                        </div>
+                        <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+
+                        <div class="pris">
+                            <p>2600 <span>dz</span></p>
+                        </div>
+                        <div class="footer_cart">
+                            <button>Buy</button>
+                            <div class="hart ">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                         </div>
+
+
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="img_product">
+                            <img src="./imgs/IMG_1794.JPG" alt="">
+                        </div>
+                        <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+
+                        <div class="pris">
+                            <p>2600 <span>dz</span></p>
+                        </div>
+                        <div class="footer_cart">
+                            <button>Buy</button>
+                            <div class="hart ">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="img_product">
+                            <img src="./imgs/IMG_1794.JPG" alt="">
+                        </div>
+                        <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="pris">
+                            <p>2600 <span>dz</span></p>
+                        </div>
+                        <div class="footer_cart">
+                            <button>Buy</button>
+                            <div class="hart ">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="img_product">
+                            <img src="./imgs/IMG_1794.JPG" alt="">
+                        </div>
+                        <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="pris">
+                            <p>2600 <span>dz</span></p>
+                        </div>
+                        <div class="footer_cart">
+                            <button>Buy</button>
+                            <div class="hart ">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="product swiper-slide">
+                        <div class="img_product">
+                            <img src="./imgs/IMG_1794.JPG" alt="">
+                        </div>
+                        <h3><a href="">Lorem ipsum dolor sit amet </a></h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="pris">
+                            <p>2600 <span>dz</span></p>
+                        </div>
+                        <div class="footer_cart">
+                            <button>Buy</button>
+                            <div class="hart ">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 <!-- cbn swbir js  -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./js/swiper.js"></script>
+<script src="./js/mian.js"></script>
 </body>
 </html>

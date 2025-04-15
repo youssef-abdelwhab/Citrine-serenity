@@ -173,6 +173,172 @@ header nav .contener .links .log_in:hover{
 }
 
 /* end nav bar  */
+/* start cart */
+.slid_cart{
+    width: 450px;
+    height: 100vh;
+    position: fixed;
+    padding:25px 30px ;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    right: -500px;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: var(--backgrauond-white);
+    box-shadow: -10px 0px 10px var(--border-color);
+    transition: 0.5s ease;
+
+}
+
+.slid_cart .top_cart{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom:20px ;
+    box-shadow: 0px 5px 0px  var(--border-color);
+
+
+}
+.slid_cart .top_cart h3{
+    font-size: 20px;
+    text-transform:capitalize ;
+}
+.slid_cart .top_cart h3 span{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(56, 56, 56, 0.506);
+}
+.slid_cart .top_cart span{
+    font-size: 27px;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.items_in_cart{
+    overflow: scroll;
+    height: 100%;
+    border-bottom:1px solid var(--border-color) ;
+
+
+}
+.items_in_cart .product_cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 18px;
+    /* border-top:1px solid var(--border-color) ; */
+    border-bottom:1px solid var(--border-color) ;
+}
+
+.items_in_cart .product_cart h3{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.items_in_cart .product_cart p{
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.items_in_cart .product_cart p span{
+    font-weight: normal;
+}
+.items_in_cart .product_cart button{
+    background-color: white;
+    font-size: 23px;
+    border: none;
+    margin-right: 15px;
+    cursor: pointer; 
+   transition: 0.3s ease;
+
+}
+.items_in_cart .product_cart button:hover{
+    color: red;
+    transform:scale(1.1) ;
+}
+.items_in_cart .product_cart img{
+    border-radius: 2px;
+    width: 30%;
+}
+
+.slid_cart .footer_cart{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--main-color);
+    margin-top: 0px;
+    padding-top: 15px;
+    box-shadow: 0px -5px 1px var(--border-color);
+}
+
+.slid_cart .footer_cart .Cart_subtotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 23px;
+    width: 100%;
+}
+.slid_cart .footer_cart .Cart_subtotal p{
+    color: var(--main-color);
+    font-size: 20px;
+}
+.slid_cart .footer_cart .btm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.slid_cart .footer_cart .btm a{
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+}
+.slid_cart .footer_cart .btm a:hover{
+    background-color: #eee;
+    color: var(--main-color);
+}
+.slid_cart .footer_cart .btm .trans_bg{
+    background-color: #eee;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+.actev{
+    right: 0px;
+}
+.slid_cart .bg-overlay{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    background: #0000003d;
+    width: calc(100vw - 450px);
+    transition: 0.8s ease;
+}
+
+.slid_cart.actev .bg-overlay{
+
+    left: 0;
+}
+/* end cart */
+
+
+
+
+
+
 /* start tegtory */
 
 .tegatore .contener{
@@ -195,13 +361,16 @@ header nav .contener .links .log_in:hover{
     border-radius: 50%;
     box-shadow: 5px 0px 20px var(--border-color);
 }
+.tegatore .items h4{
+    font-weight: 400;
+}
+
 
 /* end tegtory */
 
 /* start benner ads  */
 .swiper{
     box-shadow: 0px 0px 20px var(--border-color);
-
     border-radius: var(--border-radius);
     margin-top: 35px;
 }
@@ -319,7 +488,8 @@ header nav .contener .links .log_in:hover{
 
 .product h3 {
     margin: 10px 0;
-    font-weight: 600;
+    font-weight: 400;
+    text-transform: capitalize;
 }
 
 .product:hover h3 a{
