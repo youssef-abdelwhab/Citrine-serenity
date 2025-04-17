@@ -16,9 +16,9 @@ const swiper = new Swiper('.swiper', {
   var swiper2 = new Swiper(".product_swaper", {
     slidesPerView: 4,
     spaceBetween:30,
-    // autoplay:{
-    //    delay:4000,
-    // },
+    autoplay:{
+       delay:3000,
+    },
     navigation:{
         nextEl:".swiper-button-next",
         prevEl:".swiper-button-prev"
@@ -47,9 +47,9 @@ const swiper = new Swiper('.swiper', {
   var swiper2 = new Swiper(".sale_product", {
     slidesPerView: 4,
     spaceBetween:30,
-    // autoplay:{
-    //    delay:4000,
-    // },
+    autoplay:{
+       delay:3000,
+    },
     navigation:{
         nextEl:".swiper-button-next",
         prevEl:".swiper-button-prev"
